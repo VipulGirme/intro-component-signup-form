@@ -80,3 +80,23 @@ input {
 .button-highlight {
     font-weight: 600;
 }
+.btn-claim {
+    background-color: var(--green);
+    width: 100%;
+    border-radius: 8px;
+    border:none;
+    padding: 15px 32px;
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+form p {
+    font-size: 12px;
+    padding-top: 12px;
+}
+
+form p .terms-services {
+    text-decoration: none;
+    color: var(--red);
+}
