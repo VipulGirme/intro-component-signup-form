@@ -5,13 +5,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- displays site properly based on user's device -->
-
+  <script src="./app.js"></script>
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/style.css">
-  <script src="./app.js"></script>
+ 
   <title>Frontend Mentor | Intro component with sign up form</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -40,19 +40,20 @@
       </div>
       <form id="signupForm">
         <div class="form-control">
-          <input type="text" id="firstName" placeholder="First Name">
+          <input type="text" id="firstName"  placeholder="First Name" required>
         </div>
         <div class="form-control">
-          <input type="text" id="lastName" placeholder="Last Name">
+          <input type="text" id="lastName"  placeholder="Last Name" required>
+
         </div>
        <div class="form-control">
-        <input type="text" id="emailAddress" placeholder="Email Address">
+        <input type="email" id="emailAddress"  placeholder="Email Address" required>
        </div>
         <div class="form-control">
-          <input type="password" id="password" placeholder="Password">
+          <input type="password" id="password"  placeholder="Password" required>
         </div>
       
-        <button class="btn-claim">Claim your free trial</button>
+        <button class="btn-claim" type="button" onclick="validate()">Claim your free trial</button>
        
         <p>By clicking the button, you are agreeing to our <a href="#" class="terms-services">Terms and Services</a></p>
       </form>

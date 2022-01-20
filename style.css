@@ -34,9 +34,12 @@ input {
     box-sizing: border-box;
     border-radius: 4px;
     padding: 16px;
-    margin-bottom: 16px;
     border: 1px solid var(--grayish-blue);
 }
+.form-control {
+    margin-bottom: 16px;
+}
+
 .container {
     color: white;
     width: 50%;
@@ -99,4 +102,41 @@ form p {
 form p .terms-services {
     text-decoration: none;
     color: var(--red);
+}
+
+.has-error input {
+    border: 2px solid var(--red);
+    background-image: url(./images/icon-error.svg);
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+}
+
+.has-error .c {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--red);
+    text-align: right;
+  }
+
+
+div.has-error input::placeholder {
+    color: var(--red);
+    font-size: 16px;
+    font-weight: 600;
+}   
+
+@media screen and (max-width: 780px) {
+    body {
+        padding:30px;
+    }
+    main {
+        display: block;
+    }
+    .btn-claim {
+        width: 100%;
+    }
+    .container, .form-container {
+        width: 100%;
+        box-sizing: border-box;
+    }
 }
